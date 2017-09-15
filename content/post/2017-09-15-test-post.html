@@ -1,0 +1,53 @@
+---
+title: Test Post
+author: Matthew Haines
+date: '2017-09-15'
+slug: test-post
+categories:
+  - R
+tags:
+  - Lahman
+  - baseball
+  - dplyr
+---
+
+
+
+<p>This is a test post, let’s add some packages:</p>
+<pre class="r"><code>library(Lahman)
+library(dplyr)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<p>Let’s add a query:</p>
+<pre class="r"><code>Batting%&gt;%
+  filter(playerID==&#39;ruthba01&#39;)%&gt;%
+  select(playerID,yearID,teamID,HR)</code></pre>
+<pre><code>##    playerID yearID teamID HR
+## 1  ruthba01   1914    BOS  0
+## 2  ruthba01   1915    BOS  4
+## 3  ruthba01   1916    BOS  3
+## 4  ruthba01   1917    BOS  2
+## 5  ruthba01   1918    BOS 11
+## 6  ruthba01   1919    BOS 29
+## 7  ruthba01   1920    NYA 54
+## 8  ruthba01   1921    NYA 59
+## 9  ruthba01   1922    NYA 35
+## 10 ruthba01   1923    NYA 41
+## 11 ruthba01   1924    NYA 46
+## 12 ruthba01   1925    NYA 25
+## 13 ruthba01   1926    NYA 47
+## 14 ruthba01   1927    NYA 60
+## 15 ruthba01   1928    NYA 54
+## 16 ruthba01   1929    NYA 46
+## 17 ruthba01   1930    NYA 49
+## 18 ruthba01   1931    NYA 46
+## 19 ruthba01   1932    NYA 41
+## 20 ruthba01   1933    NYA 34
+## 21 ruthba01   1934    NYA 22
+## 22 ruthba01   1935    BSN  6</code></pre>

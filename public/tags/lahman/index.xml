@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on HDB: Haines&#39;s Data Blog</title>
-    <link>https://geturhaineson.netlify.com/post/</link>
-    <description>Recent content in Posts on HDB: Haines&#39;s Data Blog</description>
+    <title>Lahman on HDB: Haines&#39;s Data Blog</title>
+    <link>https://geturhaineson.netlify.com/tags/lahman/</link>
+    <description>Recent content in Lahman on HDB: Haines&#39;s Data Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://geturhaineson.netlify.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://geturhaineson.netlify.com/tags/lahman/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

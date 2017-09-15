@@ -6,20 +6,20 @@
     <description>Recent content on HDB: Haines&#39;s Data Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 15 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://geturhaineson.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>https://geturhaineson.netlify.com/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Test Post</title>
+      <link>https://geturhaineson.netlify.com/post/test-post/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://geturhaineson.netlify.com/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <guid>https://geturhaineson.netlify.com/post/test-post/</guid>
+      <description>This is a test post, let’s add some packages:
+library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionLet’s add a query:
+Batting%&amp;gt;%filter(playerID==&amp;#39;ruthba01&amp;#39;)%&amp;gt;%select(playerID,yearID,teamID,HR)## playerID yearID teamID HR## 1 ruthba01 1914 BOS 0## 2 ruthba01 1915 BOS 4## 3 ruthba01 1916 BOS 3## 4 ruthba01 1917 BOS 2## 5 ruthba01 1918 BOS 11## 6 ruthba01 1919 BOS 29## 7 ruthba01 1920 NYA 54## 8 ruthba01 1921 NYA 59## 9 ruthba01 1922 NYA 35## 10 ruthba01 1923 NYA 41## 11 ruthba01 1924 NYA 46## 12 ruthba01 1925 NYA 25## 13 ruthba01 1926 NYA 47## 14 ruthba01 1927 NYA 60## 15 ruthba01 1928 NYA 54## 16 ruthba01 1929 NYA 46## 17 ruthba01 1930 NYA 49## 18 ruthba01 1931 NYA 46## 19 ruthba01 1932 NYA 41## 20 ruthba01 1933 NYA 34## 21 ruthba01 1934 NYA 22## 22 ruthba01 1935 BSN 6</description>
     </item>
     
   </channel>
