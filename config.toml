@@ -1,4 +1,4 @@
 theme = "hugo_theme_robust"
-baseURL = "http://example.org/"
+baseURL = "https://geturhaineson.netlify.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "HDB: Haines's Data Blog"
