@@ -1,55 +1,48 @@
-baseurl = "https://example.org/"
-title = "Tracks"
-theme = "hugo-tracks-theme"
-languageCode = "en-us"
-# Enable comments by entering your Disqus shortname
-disqusShortname = ""
-# Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+baseURL = "http://yurizal-san.com/"			# Site's URL
+title = "HDB"								# Site's Name
+theme = "manis-hugo-theme"
+copyright = "&copy; 2017 Yurizal Susanto"	# Copyright notice. Note: You can use HTML tag here
+pluralizeListTitles = false
+paginate = 10								# Minimum number of item before paginate navigation show up
+canonifyURL = true
+#disqusShortname = ""                        # Your disqus shortname
+
+[taxonomies]
+	tag = "tags"
+
 
 [params]
-  # Use custom.css for your custom styling
-  style = "default"
-  description = "Describe your website"
-  copyright = "&copy;2016 Your name or company"
-  sidebarAbout = [
-    "I am a creative illustrator and graphic designer with more than 10 years of experience.",
-    "Originally from Toronto, currently based in London."
-  ]
+	debugCSS = false                        # If false, use minified CSS (ui.min.css)
+	#disqusSections = ["blog"]               # list of section support disqus comments
+	# Site meta description
+	description = "My name is Matthe Haines and this blog will follow everything I have learned in R."
+	tagline = "Haines Data Blog"   # Site's Tagline (Subtitle or Keyword)
+	#themeAttrib = true                      # If true give attribution to this theme
+	licenseURL = "/about/license"           # URL to license file, can be outside of your domain
 
-  # Contact page
-     # Since this template is static, the contact form uses www.formspree.io as a
-     # proxy. The form makes a POST request to their servers to send the actual
-     # email. Visitors can send up to a 1000 emails each month for free.
-     #
-     # What you need to do for the setup?
-     #
-     # - set your email address under 'email' below
-     # - upload the generated site to your server
-     # - send a dummy email yourself to confirm your account
-     # - click the confirm link in the email from www.formspree.io
-     # - you're done. Happy mailing!
-  email = "you@yoursite.com"
+	# 404 Configuration
+	head404 = "Sorry, I can find what you want."
+	sub404 = "Back to <a href='/'>Home</a>."
 
-  # Nav links in the side bar
-  [[params.navlinks]]
-  name = "Home"
-  url = ""
+	colorTheme = "#ff8181"                  # Color of your website
+	latestCount = 3                         # Maximum number of item in Latest Posts or Works
+	faviconImg = ""                         # Path to site's favicon image
+	dateFmt = "Jan 02, 2006"                # Date format in item list
 
-  [[params.navlinks]]
-  name = "About"
-  url = "about/"
+	# Code Highlighting (HighlightJS)
+	highlightJs = true
+	highlightJsLanguages = [ "go" ]
+	highlightJsStyle = "ocean"
 
-  [[params.navlinks]]
-  name = "Get in touch"
-  url = "contact/"
+	# Social Links
+	email = "mhaine86@lakers.mercyhurst.edu"
+	github = "https://github.com/mhaine86/"
 
-  [params.social]
-  facebook      = "full page or profile url in facebook"
-  googleplus    = "full profile url in googleplus"
-  email         = "email@example.com"
-  twitter       = "full profile url in twitter"
-  linkedin      = "full profile url in linkedin"
-  stackoverflow = "full profile url in stackoverflow"
-  instagram     = "full profile url in instagram"
-  github        = "full profile url in github"
+
+# Language Configuration
+defaultContentLanguage = "en"
+# Edit this if you want to translate your blog
+#[languages.in]
+#	lang = "in"
+#	languageName = "Bahasa Indonesia"
+#	weight = 1

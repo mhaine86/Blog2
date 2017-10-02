@@ -1,0 +1,36 @@
+---
+title: R basics length(), diff(), mean()
+author: Matthew Haines
+date: '2017-09-13'
+slug: r-basics-length-diff-mean
+categories:
+  - R
+tags:
+  - Functions
+---
+
+
+
+<div id="r-series-2" class="section level1">
+<h1>R Series 2</h1>
+<div id="functions-length-diff-and-mean" class="section level3">
+<h3>Functions length(), diff(), and mean()</h3>
+<p>Last post we examined the use of the combine funtion to throw an array of numbers into a variable. Now we will examine some functions that actually affect the array. First, we will look at the function length(). To do so we will need a list of numbers. Since I am a big baseball guy, I used Chicago Cub’s first basemen, Anthony Rizzo’s, home runs over his last five seasons.</p>
+<pre class="r"><code>RizzoHR&lt;-c(32,31,32,23,15)
+RizzoHR</code></pre>
+<pre><code>## [1] 32 31 32 23 15</code></pre>
+<p>Now the length() function tells us how many entries there are in our saved array. See below:</p>
+<pre class="r"><code>length(RizzoHR)</code></pre>
+<pre><code>## [1] 5</code></pre>
+<p>Let’s say now we wanted to know the difference between the number of homeruns in each of Rizzo’s seasons. To do this one would use the difference function. See below:</p>
+<pre class="r"><code>diff(RizzoHR)</code></pre>
+<pre><code>## [1] -1  1 -9 -8</code></pre>
+<p>Let’s look at the mean function. The mean function takes the sum of all the entries and then divides it by the length of the array. See below:</p>
+<pre class="r"><code>mean(RizzoHR)</code></pre>
+<pre><code>## [1] 26.6</code></pre>
+<p>And finally the last thing we can do to ramp up the complexity a bit is nest the functions. We know how to find the difference between Rizzo’s individual season home runs with the difference function. We can find the average difference between seasons by nesting the mean function with the difference function. See below:</p>
+<pre class="r"><code>mean(diff(RizzoHR))</code></pre>
+<pre><code>## [1] -4.25</code></pre>
+<p>That’s all for this post, check back in for more.</p>
+</div>
+</div>

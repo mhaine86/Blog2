@@ -1,0 +1,7 @@
+{{ with .Site.Params.Email }}
+<a href="mailto:{{.}}"><img class="icon-social" src="/img/email.svg" alt="Email Me!"/></a>
+{{ end }}
+{{ with .Site.Params.Github }}
+<a href="{{.}}"><img class="icon-social" src="/img/github.svg" alt="Github"/></a>
+{{ end }}
+

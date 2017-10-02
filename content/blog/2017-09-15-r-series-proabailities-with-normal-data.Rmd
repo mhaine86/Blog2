@@ -1,0 +1,30 @@
+---
+title: R Series Proabailities with normal data
+author: Matthew Haines
+date: '2017-09-15'
+slug: r-series-proabailities-with-normal-data
+categories:
+  - R
+tags:
+  - Functions
+  - Statistics
+---
+
+
+#R Series 4
+
+## Function pnorm()
+
+Let's talk about normally distributed data. Normally distributed data is the unachievable unicorn, it's like Kristaps Porzingas, you do everything that you can to get it, but it rarely ever occurs in nature. Normally distributed data is a perfect bell curve and is statistically predictable.Its probability is predictable through a function in R called pnorm. Let's supposed that a study found that foot lengths for Japanese women are normally distributed with a mean of 24.9 centimeters and standard deviation 1.05 centimeters. For this population, find the probability that a randomly chosen foot is less than 26 centimeters long. The R code to find this probability value is shown below:
+
+```{r}
+pnorm(26, 24.9, 1.05)
+```
+
+This code spits out [1] 0.8525929 which can be read as a percentage for probability. So the answer to that problem is that a randomly chosen foot is has an 85% probability of being less than 26 centimeters. The regular pnorm equation calculates this probability from the area under the bell curve based on the value we gave, the data set's mean, and the data set's standard deviation. To get the probabaility of a foot that is bigger than 26 centimeters long you would use this code.
+
+```{r}
+1-pnorm(26, 24.9, 1.05)
+```
+
+which is about 15% or the rest of the data set. So not overly complicated, but again all of this is dependent on the data being normal. This is also an incredibly simplistic explanation of normal data, and p values so I encourage any readers to do some more research on normal data, and z-scores. As always be sure to check out some other posts to get more familiar with R.   

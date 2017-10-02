@@ -1,0 +1,22 @@
+---
+title: R Basics combine
+author: Matthew Haines
+date: '2017-09-13'
+slug: r-basics-combine
+categories:
+  - R
+tags:
+  - Functions
+---
+
+# R Series
+
+These posts will follow everything I have learned or stumbled upon during my time in Mercyhurst's Data Science program. This first function is called combine and it is launched by using this line of code c().
+As demonstrated below, the combine function combines all the data within the parenthesis into a list and that list is stored within the designated variable.
+
+```{r}
+x<- c(1,5,7,15)
+x
+
+```
+

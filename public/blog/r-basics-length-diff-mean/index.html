@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="generator" content="Hugo 0.29" />
+		<title>R basics length(), diff(), mean() - HDB</title>
+
+		<meta name="description" content="R Series 2Functions length(), diff(), and mean()Last post we examined the use of the combine funtion to throw an array of numbers into a variable. Now we will examine some functions that actually affect the array. First, we will look at the function length(). To do so we will need a list of numbers. Since I am a big baseball guy, I used Chicago Cub’s first basemen, Anthony Rizzo’s, home runs over his last five seasons.">
+
+
+		
+
+		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Lato|Raleway">
+
+		
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/ocean.min.css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+		
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/go.min.js"></script>
+		
+		
+
+		
+		<link rel="stylesheet" href="/css/ui.min.css"/>
+		
+		<style>
+	a { color: #ff8181; }
+	blockquote {
+		border-left-color: #ff8181;
+		border-right-color: #ff8181; }
+	.bar a:hover {
+		color: #ff8181;
+		text-decoration: none; }
+	.sep {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		margin-left:0;
+		width: 24rem;
+		border-top: 2px solid #ff8181; }
+</style>
+
+	</head>
+
+<body>
+<header class="container">
+	<div class="u-header">
+		<nav class="bar">
+	<ul><li>
+			<a href="/">
+				<img class="icon-text" src="/img/prev.svg"/>
+			</a>
+		</li><li><a href="/blog/">All Posts</a></li></ul>
+</nav>
+
+	</div>
+</header>
+<main class="container">
+
+<article>
+	<header><hgroup id="brand">
+	<h1>R basics length(), diff(), mean()</h1>
+	<h5>
+		<time datetime="2017-09-13 00:00:00 &#43;0000 UTC">Sep 13, 2017</time>
+		-
+			
+			<a href="/tags/Functions">Functions</a>
+			</h5>
+	
+</hgroup>
+<hr class="sep" />
+</header>
+	<div id="r-series-2" class="section level1">
+<h1>R Series 2</h1>
+<div id="functions-length-diff-and-mean" class="section level3">
+<h3>Functions length(), diff(), and mean()</h3>
+<p>Last post we examined the use of the combine funtion to throw an array of numbers into a variable. Now we will examine some functions that actually affect the array. First, we will look at the function length(). To do so we will need a list of numbers. Since I am a big baseball guy, I used Chicago Cub’s first basemen, Anthony Rizzo’s, home runs over his last five seasons.</p>
+<pre class="r"><code>RizzoHR&lt;-c(32,31,32,23,15)
+RizzoHR</code></pre>
+<pre><code>## [1] 32 31 32 23 15</code></pre>
+<p>Now the length() function tells us how many entries there are in our saved array. See below:</p>
+<pre class="r"><code>length(RizzoHR)</code></pre>
+<pre><code>## [1] 5</code></pre>
+<p>Let’s say now we wanted to know the difference between the number of homeruns in each of Rizzo’s seasons. To do this one would use the difference function. See below:</p>
+<pre class="r"><code>diff(RizzoHR)</code></pre>
+<pre><code>## [1] -1  1 -9 -8</code></pre>
+<p>Let’s look at the mean function. The mean function takes the sum of all the entries and then divides it by the length of the array. See below:</p>
+<pre class="r"><code>mean(RizzoHR)</code></pre>
+<pre><code>## [1] 26.6</code></pre>
+<p>And finally the last thing we can do to ramp up the complexity a bit is nest the functions. We know how to find the difference between Rizzo’s individual season home runs with the difference function. We can find the average difference between seasons by nesting the mean function with the difference function. See below:</p>
+<pre class="r"><code>mean(diff(RizzoHR))</code></pre>
+<pre><code>## [1] -4.25</code></pre>
+<p>That’s all for this post, check back in for more.</p>
+</div>
+</div>
+
+	<nav>
+	
+		<a class="prev-post" href="http://yurizal-san.com/blog/test-post/">
+			<img class="icon-text" src="/img/prev.svg"/>Test Post</a>
+	
+	
+		<a class="next-post" href="http://yurizal-san.com/blog/r-basics-combine/">R Basics combine<img class="icon-text" src="/img/next.svg"/>
+		</a>
+	
+	</nav>
+</article>
+
+			<hr class="sep" />
+		</main>
+		<footer class="container">
+			<div class="u-footer">
+				
+<a href="mailto:mhaine86@lakers.mercyhurst.edu"><img class="icon-social" src="/img/email.svg" alt="Email Me!"/></a>
+
+
+<a href="https://github.com/mhaine86/"><img class="icon-social" src="/img/github.svg" alt="Github"/></a>
+
+
+
+				<p>
+					
+					
+					&copy; 2017 Yurizal Susanto
+					
+					
+					| <a href="/about/license">License</a>
+					
+				</p>
+				
+				<a href="#">
+					<img class="icon-text" src="/img/toup.svg" alt="To Up"/>
+					<span>Back to Up</span>
+				</a>
+				
+			</div>
+		</footer>
+		
+		<script>hljs.initHighlightingOnLoad();</script>
+		
+	</body>
+</html>
+

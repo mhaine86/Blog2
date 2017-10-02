@@ -1,0 +1,25 @@
+---
+title: Test Post
+author: Matt Haines
+date: '2017-09-13'
+slug: test-post
+categories: ["R"]
+tags: ["Lahman","baseball","dplyr"]
+---
+
+This is just a test post let's add some libraries:
+
+```{r}
+library(Lahman)
+library(dplyr)
+```
+
+Now how about a query:
+
+```{r}
+Batting%>%
+  select(playerID,HR)%>%
+  filter(HR>50)
+```
+
+

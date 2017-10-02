@@ -1,41 +1,58 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Tracks</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on Tracks</description>
+    <title>Tags on HDB</title>
+    <link>http://yurizal-san.com/tags/</link>
+    <description>Recent content in Tags on HDB</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy;2016 Your name or company</copyright>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <copyright>&amp;copy; 2017 Yurizal Susanto</copyright>
+    <lastBuildDate>Wed, 13 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yurizal-san.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Plot</title>
-      <link>/tags/plot/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Baseball</title>
+      <link>http://yurizal-san.com/tags/baseball/</link>
+      <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/plot/</guid>
+      <guid>http://yurizal-san.com/tags/baseball/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>R Markdown</title>
-      <link>/tags/r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Dplyr</title>
+      <link>http://yurizal-san.com/tags/dplyr/</link>
+      <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r-markdown/</guid>
+      <guid>http://yurizal-san.com/tags/dplyr/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Regression</title>
-      <link>/tags/regression/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Functions</title>
+      <link>http://yurizal-san.com/tags/functions/</link>
+      <pubDate>Sat, 16 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/regression/</guid>
+      <guid>http://yurizal-san.com/tags/functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lahman</title>
+      <link>http://yurizal-san.com/tags/lahman/</link>
+      <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://yurizal-san.com/tags/lahman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>http://yurizal-san.com/tags/statistics/</link>
+      <pubDate>Sat, 16 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://yurizal-san.com/tags/statistics/</guid>
       <description></description>
     </item>
     

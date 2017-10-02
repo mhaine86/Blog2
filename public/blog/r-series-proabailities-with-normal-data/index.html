@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="generator" content="Hugo 0.29" />
+		<title>R Series Proabailities with normal data - HDB</title>
+
+		<meta name="description" content="R Series 4Function pnorm()Let’s talk about normally distributed data. Normally distributed data is the unachievable unicorn, it’s like Kristaps Porzingas, you do everything that you can to get it, but it rarely ever occurs in nature. Normally distributed data is a perfect bell curve and is statistically predictable.Its probability is predictable through a function in R called pnorm. Let’s supposed that a study found that foot lengths for Japanese women are normally distributed with a mean of 24.">
+
+
+		
+
+		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Lato|Raleway">
+
+		
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/ocean.min.css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+		
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/go.min.js"></script>
+		
+		
+
+		
+		<link rel="stylesheet" href="/css/ui.min.css"/>
+		
+		<style>
+	a { color: #ff8181; }
+	blockquote {
+		border-left-color: #ff8181;
+		border-right-color: #ff8181; }
+	.bar a:hover {
+		color: #ff8181;
+		text-decoration: none; }
+	.sep {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		margin-left:0;
+		width: 24rem;
+		border-top: 2px solid #ff8181; }
+</style>
+
+	</head>
+
+<body>
+<header class="container">
+	<div class="u-header">
+		<nav class="bar">
+	<ul><li>
+			<a href="/">
+				<img class="icon-text" src="/img/prev.svg"/>
+			</a>
+		</li><li><a href="/blog/">All Posts</a></li></ul>
+</nav>
+
+	</div>
+</header>
+<main class="container">
+
+<article>
+	<header><hgroup id="brand">
+	<h1>R Series Proabailities with normal data</h1>
+	<h5>
+		<time datetime="2017-09-15 00:00:00 &#43;0000 UTC">Sep 15, 2017</time>
+		-
+			
+			<a href="/tags/Functions">Functions</a>
+			
+			<a href="/tags/Statistics">Statistics</a>
+			</h5>
+	
+</hgroup>
+<hr class="sep" />
+</header>
+	<div id="r-series-4" class="section level1">
+<h1>R Series 4</h1>
+<div id="function-pnorm" class="section level2">
+<h2>Function pnorm()</h2>
+<p>Let’s talk about normally distributed data. Normally distributed data is the unachievable unicorn, it’s like Kristaps Porzingas, you do everything that you can to get it, but it rarely ever occurs in nature. Normally distributed data is a perfect bell curve and is statistically predictable.Its probability is predictable through a function in R called pnorm. Let’s supposed that a study found that foot lengths for Japanese women are normally distributed with a mean of 24.9 centimeters and standard deviation 1.05 centimeters. For this population, find the probability that a randomly chosen foot is less than 26 centimeters long. The R code to find this probability value is shown below:</p>
+<pre class="r"><code>pnorm(26, 24.9, 1.05)</code></pre>
+<pre><code>## [1] 0.8525929</code></pre>
+<p>This code spits out [1] 0.8525929 which can be read as a percentage for probability. So the answer to that problem is that a randomly chosen foot is has an 85% probability of being less than 26 centimeters. The regular pnorm equation calculates this probability from the area under the bell curve based on the value we gave, the data set’s mean, and the data set’s standard deviation. To get the probabaility of a foot that is bigger than 26 centimeters long you would use this code.</p>
+<pre class="r"><code>1-pnorm(26, 24.9, 1.05)</code></pre>
+<pre><code>## [1] 0.1474071</code></pre>
+<p>which is about 15% or the rest of the data set. So not overly complicated, but again all of this is dependent on the data being normal. This is also an incredibly simplistic explanation of normal data, and p values so I encourage any readers to do some more research on normal data, and z-scores. As always be sure to check out some other posts to get more familiar with R.</p>
+</div>
+</div>
+
+	<nav>
+	
+		<a class="prev-post" href="http://yurizal-san.com/blog/r-basics-seq-rep-and-standard-deviation-with-basic-functions/">
+			<img class="icon-text" src="/img/prev.svg"/>R Basics seq(), rep(), and standard deviation with basic functions</a>
+	
+	
+		<a class="next-post" href="http://yurizal-san.com/blog/r-statistics-t-test/">R Statistics T-test<img class="icon-text" src="/img/next.svg"/>
+		</a>
+	
+	</nav>
+</article>
+
+			<hr class="sep" />
+		</main>
+		<footer class="container">
+			<div class="u-footer">
+				
+<a href="mailto:mhaine86@lakers.mercyhurst.edu"><img class="icon-social" src="/img/email.svg" alt="Email Me!"/></a>
+
+
+<a href="https://github.com/mhaine86/"><img class="icon-social" src="/img/github.svg" alt="Github"/></a>
+
+
+
+				<p>
+					
+					
+					&copy; 2017 Yurizal Susanto
+					
+					
+					| <a href="/about/license">License</a>
+					
+				</p>
+				
+				<a href="#">
+					<img class="icon-text" src="/img/toup.svg" alt="To Up"/>
+					<span>Back to Up</span>
+				</a>
+				
+			</div>
+		</footer>
+		
+		<script>hljs.initHighlightingOnLoad();</script>
+		
+	</body>
+</html>
+
